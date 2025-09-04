@@ -1,4 +1,11 @@
+
 # generate_loans_dataset.py
+"""
+Generate it with a triangular distribution (0–40 years, mode ≈ 12) for realism and add a small positive effect to the approval score for higher experience.
+    New experience field (0–40 years, int), distribution skewed toward early–mid career.
+    Small positive effect of experience on approval score (configurable thresholds).
+    Header updated to include experience
+"""
 import csv, random, math, argparse
 from typing import List
 
@@ -26,8 +33,7 @@ def make_full_name(gender: str) -> str:
     else:
         first = random.choice(FEMALE_FIRST)
     last = random.choice(LAST_NAMES)
-
-    # ~30% chance to add a middle initial for realism
+    # ~30% chance for a middle initial
     if random.random() < 0.30:
         middle_initial = chr(ord('A') + random.randrange(26))
         return f"{first} {middle_initial}. {last}"
@@ -42,6 +48,12 @@ def make_record(i: int) -> dict:
     self_employed = random.choices(["yes", "no"], weights=[0.15, 0.85], k=1)[0]
     property_area = random.choices(["urban", "rural"], weights=[0.7, 0.3], k=1)[0]
     credit_history = random.choices([1,0], weights=[0.75, 0.25], k=1)[0]
+
+    # --- NEW: Years of experience (0–40, mode around 12), a bit higher if self-employed
+    base_exp = random.triangular(0, 40, 12)  # float
+    if self_employed == "yes":
+        base_exp += random.triangular(0, 5, 2)  # small bump
+    experience = int(max(0, min(40, round(base_exp))))
 
     # Monthly income (log-normal for skew)
     income = random.lognormvariate(math.log(5500), 0.45)
@@ -66,16 +78,25 @@ def make_record(i: int) -> dict:
     score += 0.2 if married == "yes" else 0.0
     score += 0.1 if property_area == "urban" else 0.0
     score += (0.5 - affordability)
+    # Small, monotonic benefit for experience
+    if experience >= 20:
+        score += 0.20
+    elif experience >= 10:
+        score += 0.10
+    elif experience >= 5:
+        score += 0.05
     score += random.uniform(-0.2, 0.2)
+
     status = "Y" if score >= 0.4 else "N"
 
     return {
         "loan_id": loan_id,
-        "applicant": applicant,   # <-- NEW
+        "applicant": applicant,
         "gender": gender,
         "married": married,
         "dependents": dependents,
         "self_employed": self_employed,
+        "experience": experience,             # <-- NEW
         "income": fmt_currency(income),
         "loan_amount": fmt_currency(loan_amount),
         "term": term,
@@ -88,7 +109,7 @@ def generate_csv(path: str, n: int, seed: int = 42) -> None:
     random.seed(seed)
     headers = [
         "loan_id","applicant","gender","married","dependents","self_employed",
-        "income","loan_amount","term","credit_history","property_area","status"
+        "experience","income","loan_amount","term","credit_history","property_area","status"  # <-- updated header
     ]
     with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=headers)

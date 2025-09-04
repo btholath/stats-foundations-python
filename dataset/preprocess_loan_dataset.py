@@ -23,10 +23,19 @@ def preprocess(in_csv: str, out_csv: str) -> None:
     df = pd.read_csv(in_csv)
     df.columns = [c.strip().lower() for c in df.columns]
 
-    # --- NEW: normalize applicant full name if present ---
+    # Applicant: normalize to Title Case if present
     if "applicant" in df.columns:
-        # Trim whitespace and standardize to Title Case (e.g., "liam j. smith" -> "Liam J. Smith")
         df["applicant"] = df["applicant"].astype(str).str.strip().str.title()
+
+    # --- NEW: Experience (years) ---
+    # Coerce to integer, clip to [0, 60], store as nullable Int64
+    if "experience" in df.columns:
+        df["experience"] = (
+            pd.to_numeric(df["experience"], errors="coerce")
+              .clip(lower=0, upper=60)
+              .round()
+              .astype("Int64")
+        )
 
     # Numeric parsing
     df["income_num"] = df["income"].apply(parse_currency)
