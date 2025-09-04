@@ -1,6 +1,7 @@
 import statistics as st
 
 data = [1,2, 3, 3]
+print("data =", data)
 
 # Mean calculation
 mean = st.mean(data)
@@ -9,7 +10,7 @@ print("Mean =", mean)
 
 # Median
 median = st.median(data)
-print("Mean =", mean)
+print("Median =", mean)
 
 # standard deviation
 std_dev = st.stdev(data)
