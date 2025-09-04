@@ -72,3 +72,9 @@ Central Tendency of Data
 -------------------------------------------
 "Single value" that attempts to "describe the whole data" using a "central point" or central location of the data.
 
+Describe the data
+    Mean
+    Median
+    Mode
+    Other - Geometric mean, Harmonic Mean, Weighted Arithmetic Mean
+
