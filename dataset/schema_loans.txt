@@ -66,6 +66,7 @@ Numeric
     loan_amount
     term
     credit_history
-    
-
-
+ 
+-------------------------------------------
+Central Tendency of Data
+-------------------------------------------
