@@ -1,0 +1,22 @@
+city,day,temperature
+New York,1,20
+New York,2,21
+New York,3,19
+New York,4,20
+New York,5,21
+New York,6,19
+New York,7,20
+Los Angeles,1,22
+Los Angeles,2,23
+Los Angeles,3,21
+Los Angeles,4,18
+Los Angeles,5,19
+Los Angeles,6,17
+Los Angeles,7,20
+Chicago,1,12
+Chicago,2,11
+Chicago,3,13
+Chicago,4,20
+Chicago,5,25
+Chicago,6,29
+Chicago,7,31
