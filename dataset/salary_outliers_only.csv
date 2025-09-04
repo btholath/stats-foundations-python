@@ -1,0 +1,63 @@
+loan_id,applicant,gender,married,dependents,self_employed,experience,income,loan_amount,term,credit_history,property_area,status
+ID1048,Michael Rodriguez,male,yes,0,yes,12,"$17,892.00","$85,016.83",360,1,urban,Y
+ID1085,Mila C. Ramirez,female,yes,0,no,14,"$17,960.73","$55,399.34",48,1,rural,Y
+ID1105,Sebastian J. Rodriguez,male,yes,0,no,9,"$14,663.07","$90,485.29",48,1,urban,Y
+ID1140,Benjamin Martin,male,no,0,no,18,"$13,994.36","$81,172.25",120,1,urban,Y
+ID1214,William Clark,male,yes,0,no,18,"$13,429.16","$29,806.95",48,1,rural,Y
+ID1318,Ella Ramirez,female,no,3,no,19,"$13,458.30","$84,205.13",60,0,urban,N
+ID1405,Jack Gonzalez,male,yes,0,no,11,"$16,225.81","$18,024.67",60,1,urban,Y
+ID1471,Ella K. Rodriguez,female,yes,1,no,20,"$14,177.22","$85,195.35",60,1,urban,Y
+ID1485,Michael Miller,male,no,0,yes,10,"$17,570.95","$113,521.39",48,1,urban,Y
+ID1568,Luna Lewis,female,yes,0,no,34,"$21,409.35","$114,798.94",180,1,rural,Y
+ID1569,Abigail U. Lee,female,no,1,no,18,"$14,384.56","$32,608.63",36,1,urban,Y
+ID1598,Benjamin Miller,male,yes,0,no,16,"$14,139.15","$49,937.03",120,0,urban,N
+ID1616,Oliver Moore,male,yes,0,no,20,"$15,127.31","$22,031.63",48,1,rural,Y
+ID1641,Abigail Gonzalez,female,yes,1,no,18,"$15,703.01","$18,850.57",120,1,urban,Y
+ID1699,Michael Thompson,male,yes,1,no,33,"$15,236.52","$56,742.74",60,0,rural,N
+ID1734,Mila Clark,female,no,0,no,4,"$15,361.64","$89,445.19",360,1,rural,Y
+ID1752,Abigail U. Johnson,female,yes,1,no,28,"$15,273.83","$65,471.54",240,1,urban,Y
+ID1775,Sebastian Perez,male,no,1,no,8,"$15,833.90","$100,119.89",180,1,urban,Y
+ID1778,Camila B. Lewis,female,yes,3,yes,31,"$14,095.53","$21,724.07",48,1,urban,Y
+ID1792,William Smith,male,yes,0,no,21,"$15,295.24","$76,243.29",120,1,rural,Y
+ID1805,Ethan Garcia,male,no,1,no,11,"$16,557.17","$69,173.26",60,1,urban,Y
+ID1853,Charlotte White,female,yes,1,no,16,"$13,439.20","$79,328.36",360,1,urban,Y
+ID1858,Mateo R. Smith,male,no,0,no,7,"$13,277.74","$42,323.83",60,1,rural,Y
+ID1861,Luna Lopez,female,yes,1,no,19,"$13,365.24","$64,022.45",120,1,urban,Y
+ID1912,Sofia K. Miller,female,no,3,no,17,"$14,241.71","$75,497.79",36,1,urban,Y
+ID1915,Oliver Sanchez,male,yes,3,no,23,"$14,529.53","$68,304.67",180,0,urban,N
+ID1927,Ethan S. Garcia,male,no,0,no,8,"$15,446.39","$35,613.62",120,1,urban,Y
+ID1931,James White,male,yes,1,no,11,"$13,330.22","$42,058.86",36,1,urban,Y
+ID1935,Mia Z. Lewis,female,yes,4,no,31,"$13,184.08","$12,907.36",360,1,rural,Y
+ID1948,Emily Williams,female,yes,0,no,24,"$14,395.39","$83,877.26",120,1,rural,Y
+ID1953,Elizabeth Johnson,female,yes,1,no,39,"$14,217.97","$82,303.90",360,1,urban,Y
+ID1960,Benjamin Miller,male,no,0,no,8,"$13,696.53","$20,105.48",180,0,urban,N
+ID1983,Abigail Harris,female,no,1,no,28,"$14,924.29","$92,026.55",240,1,urban,Y
+ID2012,Sophia Robinson,female,yes,4,no,17,"$13,922.63","$18,306.08",36,1,rural,Y
+ID2027,Isabella G. Johnson,female,yes,0,no,28,"$16,128.36","$85,012.44",36,1,urban,Y
+ID2121,Benjamin Johnson,male,no,1,no,14,"$16,942.40","$60,181.72",60,1,rural,Y
+ID2163,James Martin,male,no,0,no,29,"$14,408.17","$26,646.34",36,1,rural,Y
+ID2175,Olivia Williams,female,yes,0,no,5,"$13,174.36","$31,887.77",240,0,urban,N
+ID2197,Olivia V. Williams,female,yes,0,no,21,"$14,985.52","$90,259.17",48,1,rural,Y
+ID2210,Benjamin Wilson,male,no,0,no,11,"$19,509.29","$48,906.26",60,0,urban,N
+ID2228,Sebastian Brown,male,yes,1,no,32,"$14,159.31","$86,816.82",120,1,rural,Y
+ID2266,Michael L. Jones,male,yes,0,no,10,"$13,236.03","$35,965.89",36,1,urban,Y
+ID2293,Mateo Lopez,male,yes,0,no,20,"$16,166.16","$36,224.28",60,0,urban,N
+ID2306,Emily Davis,female,yes,1,no,13,"$14,470.19","$22,764.70",60,1,urban,Y
+ID2495,Avery Garcia,female,yes,0,no,36,"$14,836.80","$24,377.76",360,1,rural,Y
+ID2508,Liam Wilson,male,no,1,no,8,"$14,870.15","$77,234.27",180,0,rural,N
+ID2513,James Ramirez,male,no,1,no,29,"$13,862.47","$85,089.46",48,0,urban,N
+ID2550,Benjamin R. Clark,male,yes,0,yes,14,"$13,470.14","$32,650.69",60,1,rural,Y
+ID2568,Isabella W. Lewis,female,yes,0,no,25,"$14,214.23","$66,915.27",240,1,urban,Y
+ID2591,Isabella Wilson,female,no,0,no,18,"$13,317.46","$63,300.70",48,1,rural,Y
+ID2611,Olivia Ramirez,female,no,1,yes,7,"$14,813.79","$93,710.28",48,1,urban,Y
+ID2641,Elijah Robinson,male,yes,2,no,23,"$13,289.98","$22,683.60",60,1,urban,Y
+ID2650,Avery Q. Martin,female,yes,0,no,17,"$14,639.80","$60,302.40",120,0,rural,N
+ID2657,Elijah Sanchez,male,yes,0,no,12,"$13,981.01","$83,342.23",60,1,urban,Y
+ID2680,James Gonzalez,male,yes,4,no,11,"$13,956.94","$69,094.34",360,1,rural,Y
+ID2724,Henry B. Martin,male,yes,2,no,33,"$13,277.84","$20,254.59",24,1,urban,Y
+ID2730,Mila Miller,female,yes,1,no,23,"$14,709.43","$71,272.14",180,0,urban,N
+ID2796,Harper Thomas,female,yes,0,no,24,"$17,650.25","$85,216.15",48,1,urban,Y
+ID2805,Mateo Smith,male,yes,1,no,24,"$14,939.91","$40,685.12",180,1,urban,Y
+ID2917,Sebastian Miller,male,yes,0,no,30,"$14,457.67","$20,427.34",120,1,rural,Y
+ID2952,Amelia Smith,female,no,3,no,10,"$13,236.43","$77,067.20",24,0,rural,N
+ID2978,Ella V. Smith,female,yes,2,yes,13,"$17,986.99","$115,306.76",12,1,rural,Y
