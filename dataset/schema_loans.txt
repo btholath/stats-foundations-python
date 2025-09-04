@@ -36,7 +36,36 @@ Quantitative (Continuous)
     income
     loan_amount
 
-
 -------------------------------------------
-
+Types of Variables
 -------------------------------------------
+Predictor/Independent           
+    gender
+    married
+    dependents
+    self_employed
+    income
+    loan_amount
+    term
+    credit_history
+    property_area
+
+Target/Dependent
+    status              The status is the dependent on the 
+
+Data Types
+    gender
+    married
+    self_employed
+    property_area
+    status
+
+Numeric
+    dependent
+    income
+    loan_amount
+    term
+    credit_history
+    
+
+
