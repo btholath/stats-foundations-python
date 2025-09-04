@@ -1,0 +1,42 @@
+-------------------------------------------
+Schema
+-------------------------------------------
+loan_id — ID1001 … ID3000
+gender — male, female
+married — yes, no
+dependents — 0, 1, 2, 3, 4
+self_employed — yes, no
+income — formatted currency (e.g., $5,849.00)
+loan_amount — formatted currency tied to income (e.g., $18,420.55)
+term — months from {12, 24, 36, 48, 60, 120, 180, 240, 360}
+credit_history — 1 or 0
+property_area — urban, rural
+status — Y or N (simple rule-based underwriting for realism)
+
+
+-------------------------------------------
+Understanding Data, Variables/Features
+-------------------------------------------
+Qualitative (Nominal)                                
+    Gender
+    married
+    self_employed
+    property_area
+    status
+
+Qualitative (Ordinal)                                
+    credit history
+    dependents
+
+
+Quantitative (Discrete)
+    Term
+
+Quantitative (Continuous)
+    income
+    loan_amount
+
+
+-------------------------------------------
+
+-------------------------------------------
