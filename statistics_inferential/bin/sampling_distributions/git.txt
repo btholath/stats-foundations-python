@@ -1,0 +1,9 @@
+@btholath ➜ /workspaces/stats-foundations-python (main) $ git add .
+@btholath ➜ /workspaces/stats-foundations-python (main) $ git commit -m "distribution - normal, standard normal, sampling"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+@btholath ➜ /workspaces/stats-foundations-python (main) $ git push
+Everything up-to-date
+@btholath ➜ /workspaces/stats-foundations-python (main) $ 
