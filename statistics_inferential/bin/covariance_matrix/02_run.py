@@ -1,3 +1,16 @@
+"""
+You can use this real-world covariance matrix CSV from a GitHub repo focused on Indian stock market portfolio optimization. It contains covariance values between top 50 companies over 8 years.
+
+Interpretation
+Component	            Insight
+Eigenvalues	            Show how much variance each principal direction captures
+Eigenvectors	        Represent directions in asset space that explain most portfolio risk
+Top Eigenvector	        Often aligns with market-wide movement or dominant sector exposure
+
+This is the foundation of PCA, risk factor modeling, and portfolio diversification. 
+You can use the top eigenvectors to construct uncorrelated portfolios or reduce dimensionality in asset selection.
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
