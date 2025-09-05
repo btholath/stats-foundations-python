@@ -13,7 +13,6 @@ If cov_xy is positive, height and weight tend to increase together.
 If cov_xy is negative, taller people tend to weigh less (unlikely here).
 If cov_xy is near zero, there's no consistent relationship.
 
-
 """
 import numpy as np
 import pandas as pd
