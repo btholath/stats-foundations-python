@@ -1,3 +1,12 @@
+
+"""
+So all that the correlation tells us
+is how strong or weak the two variables are correlated.
+It tells us how they move or change together,
+
+but it does not tell us
+whether one causes the other.
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import pearsonr
