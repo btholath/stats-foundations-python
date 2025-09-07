@@ -11,3 +11,5 @@ print(x_p)
 
 x_p_t = x_p.T
 print(x_p_t)
+
+
