@@ -8,3 +8,5 @@ Documentation on PyTorch tensors, including available data types, is https://pyt
 import torch
 x_pt = torch.tensor(25) # type specification optional, e.g.: dtype=torch.float16
 print("x_pt = ", x_pt)
+
+print("x_pt.shape = ", x_pt.shape)
